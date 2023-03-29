@@ -21,6 +21,11 @@ namespace JournalApp
         public MainWindow()
         {
             InitializeComponent();
-        } 
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

@@ -8,20 +8,20 @@ namespace JournalApp.ViewModels
     {
         #region Заголовок окна
 
-        private string _Title;
+        private string _Title = "Анализ статистики JournalApp";
         /// <summary>Заголовок окна</summary>
         public string Title
         {
             get => _Title;
             //set
             //{
-                //if (Equals(_Title, value)) return;
-                //_Title = value;
-                //OnPropertyChanged();
+            //if (Equals(_Title, value)) return;
+            //_Title = value;
+            //OnPropertyChanged();
 
-                //Set(ref _Title, value);
+            //Set(ref _Title, value);
             //}
-            set => Set (ref _Title, value);
+            set => Set(ref _Title, value);
         }
         #endregion
     }
