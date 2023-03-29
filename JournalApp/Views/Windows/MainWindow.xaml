@@ -10,20 +10,18 @@
     <Window.DataContext>
         <vm1:MainWindowViewModel/>
     </Window.DataContext>
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <TextBox Margin="10,10,0,0"
-                 Text="{Binding Title, UpdateSourceTrigger=PropertyChanged}"
-                 TextWrapping="Wrap"
-                 VerticalAlignment="Top"
-                 HorizontalAlignment="Left"
-                 Width="300" Grid.ColumnSpan="2"/>
-
-
-
-
-    </Grid>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Выход"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Помощь"></MenuItem>
+        </Menu>
+        <StatusBar DockPanel.Dock="Bottom"></StatusBar>
+        <TabControl>
+            <TabItem></TabItem>
+            <TabItem></TabItem>
+        </TabControl>        
+        
+    </DockPanel>
 </Window>
