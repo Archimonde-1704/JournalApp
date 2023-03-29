@@ -20,7 +20,7 @@
             </MenuItem>
         </Menu>
         <StatusBar DockPanel.Dock="Bottom">
-            <StatusBarItem>
+            <StatusBarItem MinWidth="150" MaxWidth="300" >
                 <TextBlock Text="1234567890"/>
             </StatusBarItem>
             <StatusBarItem>
