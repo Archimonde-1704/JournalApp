@@ -13,15 +13,42 @@
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Файл">
-                <MenuItem Header="Выход"></MenuItem>
+                <MenuItem Header="Выход"/>
             </MenuItem>
-            <MenuItem Header="Помощь"></MenuItem>
+            <MenuItem Header="Помощь" Click="MenuItem_Click">
+                <MenuItem Header="О программе"/>
+            </MenuItem>
         </Menu>
-        <StatusBar DockPanel.Dock="Bottom"></StatusBar>
-        <TabControl>
-            <TabItem></TabItem>
-            <TabItem></TabItem>
-        </TabControl>        
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem>
+                <TextBlock Text="1234567890"/>
+            </StatusBarItem>
+            <StatusBarItem>
+                <ProgressBar Width="120" Height="10" Value="30"/>
+            </StatusBarItem>
+        </StatusBar>
         
+        <TabControl>
+            <TabItem Header="Вкладка 1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="63*"/>
+                        <RowDefinition Height="325*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="157*"/>
+                        <ColumnDefinition Width="637*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Grid.Column="0" Grid.Row="0"
+                               Margin="5,7"
+                               Fill="Blue" Stroke="Purple"
+                               StrokeThickness="3"
+                               RadiusX="5" RadiusY="7"/>
+                    <Ellipse Grid.Column="1" Grid.Row="0"
+                             Fill="Purple" Stroke="Blue" StrokeThickness="3"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Вкладка 2"></TabItem>
+        </TabControl>
     </DockPanel>
 </Window>
