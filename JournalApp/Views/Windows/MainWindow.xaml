@@ -13,7 +13,7 @@
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Файл">
-                <MenuItem Header="Выход" <!--Command="" CommandParameter=""-->/>
+                <MenuItem Header="Выход"/>
             </MenuItem>
             <MenuItem Header="Помощь" Click="MenuItem_Click">
                 <MenuItem Header="О программе"/>
