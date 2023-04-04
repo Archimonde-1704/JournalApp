@@ -5,7 +5,7 @@ using System.Windows.Input;
 
 namespace JournalApp.Infrastructure.Commands.Base
 {
-    internal class Command : ICommand
+    internal abstract class Command : ICommand
     {
         public event EventHandler CanExecuteChanged
         {
@@ -18,7 +18,7 @@ namespace JournalApp.Infrastructure.Commands.Base
             throw new NotImplementedException();
         }
 
-        public bool CanExecute(object parameter) { throw new NotImplementedException(); }
-        public bool Execute (object parameter) { throw new NotImplementedException(); }
+        public abstract bool CanExecute(object parameter);
+        public abstract void Execute(object parameter);
     }
 }
